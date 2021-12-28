@@ -73,6 +73,18 @@ async function fetchLocationName(coords) {
     .catch((error) => console.log(`send error: ${error}`));
 }*/
 
+/* API KEY + GET
+async function getText() {
+  const url = `https://uselessfacts.jsph.pl/random.json?language=en`;
+
+  const response = await fetch(url);
+  const json = await response.json();
+  console.log(json);
+
+  $factText = json.text;
+}
+*/
+
 /* Location functions */
 function locationSuccess() {
   /*  fetchLocationName(location.coords);*/

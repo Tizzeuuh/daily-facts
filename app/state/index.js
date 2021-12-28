@@ -7,7 +7,7 @@ const state = {
   list: [],
   letter: '',
   companionTimestamp: 0,
-  location: '',
+  text: '',
   // add other state-items here
 };
 
