@@ -6,7 +6,7 @@ let $button = null;
 let $locationName = null;
 
 function draw() {
-  $locationName.text = getStateItem('location');
+  $locationName.text = getStateItem('text');
 }
 
 export function destroy() {

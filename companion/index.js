@@ -1,10 +1,11 @@
+/*
 import * as cbor from 'cbor';
 import { outbox } from 'file-transfer';
 import { settingsStorage } from 'settings';
 import * as messaging from 'messaging';
 import { geolocation } from 'geolocation';
 
-/* Settings */
+/* Settings
 function sendSettings() {
   const settings = {
     items: settingsStorage.getItem('items')
@@ -30,7 +31,7 @@ function sendSettings() {
 
 settingsStorage.addEventListener('change', sendSettings);
 
-/* Sending short messages */
+/* Sending short messages 
 function sendShortMessage() {
   const data = {
     companionTimestamp: new Date().getTime(),
@@ -74,35 +75,36 @@ async function fetchLocationName(coords) {
 }*/
 
 /* API KEY + GET
-
+let factText = document.getElementById('location');
 async function getText() {
   const url = `https://uselessfacts.jsph.pl/random.json?language=en`;
-  const factText = document.getElementById('fact-text');
 
   const response = await fetch(url);
   const json = await response.json();
-  console.log(json);
 
   factText = json.text;
+  console.log(json.text);
 }
-*/
 
-/* Location functions */
-function locationSuccess() {
-  /*  fetchLocationName(location.coords);*/
+
+
+/* Location functions
+function textSuccess() {
+  getText();
 }
+
 
 function locationError(error) {
   console.log(`Error: ${error.code}`, `Message: ${error.message}`);
   // Handle location error (send message to device to show error)
 }
 
-/* Handle messages coming from device */
+/* Handle messages coming from device
 function processMessaging(evt) {
   console.log(evt.data);
   switch (evt.data.command) {
     case 'location':
-      geolocation.getCurrentPosition(locationSuccess, locationError);
+      geolocation.getCurrentPosition(textSuccess, locationError);
       break;
     default:
       //
@@ -111,3 +113,5 @@ function processMessaging(evt) {
 }
 
 messaging.peerSocket.addEventListener('message', processMessaging);
+
+*/
