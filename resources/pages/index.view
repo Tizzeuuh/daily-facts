@@ -8,7 +8,7 @@
 
   <use href="#button" fill="#FFB400" x="10%" y="100%-250" width="80%">
     <set href="text" attributeName="text-buffer" to="Random" />
-    <set href="handle" attributeName="id" to="replace-button" />
+    <set href="handle" attributeName="id" to="test-button" />
   </use>
 
   <use href="#button" fill="#FFB400" x="10%" y="100%-160" width="80%">
