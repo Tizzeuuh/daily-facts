@@ -1,8 +1,8 @@
 import document from 'document';
 import { switchPage } from '../navigation';
 
-let $buttonDetail = null;
-let $buttonReplace = null;
+//let $buttonDetail = null;
+//let $buttonReplace = null;
 let $buttonTest = null;
 
 function doSomething() {
@@ -11,23 +11,24 @@ function doSomething() {
 
 export function destroy() {
   console.log('destroy index page');
-  $buttonDetail = null;
-  $buttonReplace = null;
+  //$buttonDetail = null;
+  //$buttonReplace = null;
   $buttonTest = null;
 }
 
 export function init() {
   console.log('init index page');
-  $buttonDetail = document.getElementById('detail-button');
-  $buttonReplace = document.getElementById('replace-button');
+  //$buttonDetail = document.getElementById('detail-button');
+  //$buttonReplace = document.getElementById('replace-button');
   $buttonTest = document.getElementById('test-button');
 
-  $buttonDetail.onclick = () => {
+  /*$buttonDetail.onclick = () => {
     switchPage('detail', true);
   };
   $buttonReplace.onclick = () => {
     switchPage('replace');
   };
+  */
   $buttonTest.onclick = () => {
     switchPage('test', true);
   };

@@ -1,11 +1,11 @@
-/*
+
 import * as cbor from 'cbor';
 import { outbox } from 'file-transfer';
 import { settingsStorage } from 'settings';
 import * as messaging from 'messaging';
 import { geolocation } from 'geolocation';
 
-/* Settings
+Settings
 function sendSettings() {
   const settings = {
     items: settingsStorage.getItem('items')
@@ -31,7 +31,7 @@ function sendSettings() {
 
 settingsStorage.addEventListener('change', sendSettings);
 
-/* Sending short messages 
+/* Sending short messages
 function sendShortMessage() {
   const data = {
     companionTimestamp: new Date().getTime(),
@@ -49,8 +49,9 @@ messaging.peerSocket.addEventListener('open', () => {
 messaging.peerSocket.addEventListener('error', (err) => {
   console.error(`Connection error: ${err.code} - ${err.message}`);
 });
+*/
 
-/* API Fetch
+/*API Fetch
 async function fetchLocationName(coords) {
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${coords.longitude},${coords.latitude}.json?access_token=${API_KEY}`;
 
@@ -72,7 +73,8 @@ async function fetchLocationName(coords) {
     .enqueue('location.cbor', cbor.encode({ location }))
     .then(() => console.log(location + ' as location sent'))
     .catch((error) => console.log(`send error: ${error}`));
-}*/
+}
+*/
 
 /* API KEY + GET
 let factText = document.getElementById('location');
