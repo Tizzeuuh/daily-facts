@@ -1,4 +1,4 @@
-/*
+
 import document from 'document';
 import { getLocationName } from '../commands';
 import { getStateItem, setStateCallback, removeStateCallback } from '../state';
@@ -35,4 +35,3 @@ export function init() {
   setStateCallback('detail', draw);
   // draw();
 }
-*/

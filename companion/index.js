@@ -51,7 +51,7 @@ messaging.peerSocket.addEventListener('error', (err) => {
 });
 */
 
-/* API Fetch
+/*API Fetch
 async function fetchLocationName(coords) {
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${coords.longitude},${coords.latitude}.json?access_token=${API_KEY}`;
 
@@ -73,7 +73,8 @@ async function fetchLocationName(coords) {
     .enqueue('location.cbor', cbor.encode({ location }))
     .then(() => console.log(location + ' as location sent'))
     .catch((error) => console.log(`send error: ${error}`));
-}*/
+}
+*/
 
 /* API KEY + GET
 let factText = document.getElementById('location');

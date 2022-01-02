@@ -1,22 +1,22 @@
 <svg viewport-fill="#2D3142">
 <textarea fill="#FFFFFF" x="18" y="3" width="300" height="105" font-size="45" font-family="Raiju-Bold" text-anchor="middle" text-buffer="Welcome!" />
 
-  <use href="#button" fill="#FFB400" x="10%" y="100%-340" width="80%">
+  <use href="#button" fill="#FFB400" font-size="45"x="10%" y="100%-340" width="80%">
     <set href="text" attributeName="text-buffer" to="Humor" />
     <set href="handle" attributeName="id" to="replace-button" />
   </use>
 
-  <use href="#button" fill="#FFB400" x="10%" y="100%-250" width="80%">
+  <use href="#button" fill="#FFB400" font-size="45" x="10%" y="100%-250" width="80%">
     <set href="text" attributeName="text-buffer" to="Random" />
     <set href="handle" attributeName="id" to="test-button" />
   </use>
 
-  <use href="#button" fill="#FFB400" x="10%" y="100%-160" width="80%">
+  <use href="#button" fill="#FFB400" font-size="45" x="10%" y="100%-160" width="80%">
     <set href="text" attributeName="text-buffer" to="Animals" />
     <set href="handle" attributeName="id" to="detail-button" />
   </use>
 
-  <use href="#button" fill="#FFB400" x="10%" y="100%-70" width="80%">
+  <use href="#button" fill="#FFB400" font-size="45" x="10%" y="100%-70" width="80%">
     <set href="text" attributeName="text-buffer" to="History" />
     <set href="handle" attributeName="id" to="replace-button" />
   </use>
