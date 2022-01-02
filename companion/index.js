@@ -5,7 +5,7 @@ import { settingsStorage } from 'settings';
 import * as messaging from 'messaging';
 import { geolocation } from 'geolocation';
 
-/* Settings
+Settings
 function sendSettings() {
   const settings = {
     items: settingsStorage.getItem('items')
@@ -31,7 +31,7 @@ function sendSettings() {
 
 settingsStorage.addEventListener('change', sendSettings);
 
-/* Sending short messages 
+/* Sending short messages
 function sendShortMessage() {
   const data = {
     companionTimestamp: new Date().getTime(),
@@ -49,6 +49,7 @@ messaging.peerSocket.addEventListener('open', () => {
 messaging.peerSocket.addEventListener('error', (err) => {
   console.error(`Connection error: ${err.code} - ${err.message}`);
 });
+*/
 
 /* API Fetch
 async function fetchLocationName(coords) {
@@ -86,13 +87,10 @@ async function getText() {
   console.log(json.text);
 }
 
-
-
 /* Location functions
 function textSuccess() {
   getText();
 }
-
 
 function locationError(error) {
   console.log(`Error: ${error.code}`, `Message: ${error.message}`);
