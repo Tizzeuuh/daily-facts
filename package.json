@@ -17,6 +17,7 @@
   "fitbit": {
     "appType": "app",
     "appDisplayName": "Fitbit Full Example",
+    "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
     "requestedPermissions": [],
     "buildTargets": [
