@@ -1,4 +1,4 @@
-
+/*
 import * as cbor from 'cbor';
 import { outbox } from 'file-transfer';
 import { settingsStorage } from 'settings';
