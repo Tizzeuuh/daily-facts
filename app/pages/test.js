@@ -20,10 +20,13 @@ export function init() {
   console.log('init test page');
   $locationName = document.getElementById('location');
   $button = document.getElementById('back-button');
-  $button.onclick = () => {
+  
+    $button.onclick = () => {
     destroy();
     document.history.back();
   };
+
+
 
   getLocationName();
   setStateCallback('test', draw);

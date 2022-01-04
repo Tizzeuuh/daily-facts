@@ -3,8 +3,13 @@
 
   <text id="location" fill="white" x="50%" y="100" width="300" font-size="20" font-family="System-Regular" text-anchor="middle" text-length="20" text-buffer="Loading" />
 
-  <use href="#button" fill="#FFB400" x="25%" y="100%-90" width="50%" height="15%" font-size="40" font-family="System-Regular">
-    <set href="text" attributeName="text-buffer" to="Back" />
+  <use href="#button" fill="#F6511D" x="10%" y="100%-90" width="40%" height="15%" font-size="20" font-family="System-Regular">
+    <set href="text" attributeName="text-buffer" to="I KNOW" />
+    <set href="handle" attributeName="id" to="back-button" />
+  </use>
+
+  <use href="#button" fill="#F6511D" x="50%" y="100%-90" width="40%" height="15%" font-size="20" font-family="System-Regular">
+    <set href="text" attributeName="text-buffer" to="I DIDN't KNOW" />
     <set href="handle" attributeName="id" to="back-button" />
   </use>
 </svg>
