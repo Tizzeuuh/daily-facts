@@ -5,7 +5,7 @@ import { settingsStorage } from 'settings';
 import * as messaging from 'messaging';
 import { geolocation } from 'geolocation';
 
-Settings
+/* Settings
 function sendSettings() {
   const settings = {
     items: settingsStorage.getItem('items')
@@ -49,7 +49,6 @@ messaging.peerSocket.addEventListener('open', () => {
 messaging.peerSocket.addEventListener('error', (err) => {
   console.error(`Connection error: ${err.code} - ${err.message}`);
 });
-*/
 
 /*API Fetch
 async function fetchLocationName(coords) {
@@ -77,14 +76,15 @@ async function fetchLocationName(coords) {
 */
 
 /* API KEY + GET
-let factText = document.getElementById('location');
+
+let $factText = document.getElementById('location');
 async function getText() {
   const url = `https://uselessfacts.jsph.pl/random.json?language=en`;
 
   const response = await fetch(url);
   const json = await response.json();
 
-  factText = json.text;
+  $factText = json.text;
   console.log(json.text);
 }
 
@@ -112,5 +112,4 @@ function processMessaging(evt) {
 }
 
 messaging.peerSocket.addEventListener('message', processMessaging);
-
 */
