@@ -8,6 +8,7 @@ const state = {
   letter: '',
   companionTimestamp: 0,
   text: '',
+
   // add other state-items here
 };
 
@@ -69,19 +70,23 @@ function processFiles() {
         if (typeof data[key] !== 'undefined') state[key] = data[key];
       });
 
-      console.log(JSON.stringify(state));
-
       updateState();
-      callback();
-    } else if (fileName === 'location.cbor') {
+      if (callback) callback();
+    }
+    if (fileName === 'text.cbor') {
       const data = filesystem.readFileSync(fileName, 'cbor');
 
-      Object.keys(state).forEach((key) => {
+      state.text = data.text;
+
+      console.log(state.text);
+      console.log(JSON.stringify(state));
+
+      /*  Object.keys(state).forEach((key) => {
         if (typeof data[key] !== 'undefined') state[key] = data[key];
-      });
+      });*/
 
       updateState();
-      callback();
+      if (callback) callback();
     }
   }
 }
