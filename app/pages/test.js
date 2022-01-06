@@ -1,44 +1,45 @@
 import document from 'document';
-//import { getLocationName } from '../commands';
-//import { getStateItem, setStateCallback, removeStateCallback } from '../state';
+import { getLocationName } from '../commands';
+import {
+  init as initState,
+  getStateItem,
+  setStateCallback,
+  removeStateCallback,
+} from '../state';
 
-let $button = 1;
+initState();
 
-/*let $locationName = null;
+let $button = null;
+let text = document.getElementById('text');
 
 function draw() {
-  $locationName.text = getStateItem('text');
-}*/
+  text.text = getStateItem('text');
+}
 
 export function destroy() {
   console.log('destroy test page');
-  //$locationName = null;
+  text = null;
   $button = null;
-
-
-  //removeStateCallback('test');
+  removeStateCallback('text');
 }
 
 export function init() {
   console.log('init test page');
-  //$locationName = document.getElementById('location');
-  $button = document.getElementById("back-button");
+  text = document.getElementById('text');
+  $button = document.getElementById('back-button');
 
-    $button.onclick = () => {
+  $button.onclick = () => {
     destroy();
     document.history.back();
   };
-  $button = document.getElementById("back-button2");
+  $button = document.getElementById('back-button2');
 
-    $button.onclick = () => {
+  $button.onclick = () => {
     destroy();
     document.history.back();
-    };
+  };
 
-
-
-
-  /*getLocationName();
-  //setStateCallback('test', draw);
-  draw();*/
+  getLocationName();
+  setStateCallback('text', draw);
+  // draw();
 }
