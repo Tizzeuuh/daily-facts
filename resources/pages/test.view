@@ -1,7 +1,7 @@
 <svg viewport-fill="#2D3142">
-  <textarea fill="#FFB400" x="18" y="4" width="300" height="110" font-size="36" font-family="System-Regular" text-anchor="middle" text-buffer="Daily Fact" />
+  <textarea fill="#FFB400" x="18" y="10" width="300" height="110" font-size="36" font-family="System-Regular" text-anchor="middle" text-buffer="Daily Fact" />
 
-  <text id="location" fill="white" x="50%" y="100" width="300" font-size="20" font-family="System-Regular" text-anchor="middle" text-length="20" text-buffer="Loading" />
+  <textarea id="text" fill="white" x="18" y="70" width="300" height="45%" font-size="20" font-family="System-Regular" text-anchor="middle" text-length="200" text-buffer="Loading" />
 
   <use href="#button" fill="#F6511D" x="10%" y="100%-90" width="40%" height="15%" font-size="20" font-family="System-Regular">
     <set href="text" attributeName="text-buffer" to="I KNOW" />
@@ -9,7 +9,7 @@
   </use>
 
   <use href="#button" fill="#F6511D" x="50%" y="100%-90" width="40%" height="15%" font-size="20" font-family="System-Regular">
-    <set href="text" attributeName="text-buffer" to="I DIDN't KNOW" />
+    <set href="text" attributeName="text-buffer" to="I DIDN'T KNOW" />
     <set href="handle" attributeName="id" to="back-button" />
   </use>
 </svg>

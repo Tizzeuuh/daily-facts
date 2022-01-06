@@ -1,34 +1,39 @@
 import document from 'document';
 import { getLocationName } from '../commands';
-import { getStateItem, setStateCallback, removeStateCallback } from '../state';
+import {
+  init as initState,
+  getStateItem,
+  setStateCallback,
+  removeStateCallback,
+} from '../state';
+
+initState();
 
 let $button = null;
-let $factText = null;
+let text = document.getElementById('text');
 
 function draw() {
-  $factText.text = getStateItem('text');
+  text.text = getStateItem('text');
 }
 
 export function destroy() {
   console.log('destroy test page');
-  $factText = null;
+  text = null;
   $button = null;
-  removeStateCallback('test');
+  removeStateCallback('text');
 }
 
 export function init() {
   console.log('init test page');
-  $factText = document.getElementById('location');
+  text = document.getElementById('text');
   $button = document.getElementById('back-button');
-  
-    $button.onclick = () => {
+
+  $button.onclick = () => {
     destroy();
     document.history.back();
   };
 
-
-
   getLocationName();
-  setStateCallback('test', draw);
+  setStateCallback('text', draw);
   // draw();
 }
