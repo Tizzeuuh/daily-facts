@@ -1,15 +1,19 @@
 <svg viewport-fill="#2D3142">
-  <textarea fill="#FFB400" x="18" y="4" width="300" height="110" font-size="36" font-family="System-Regular" text-anchor="middle" text-buffer="Daily Fact" />
+  <textarea fill="#FFB400" x="18" y="10" width="300" height="110" font-size="36" font-family="System-Regular" text-anchor="middle" text-buffer="Daily Fact" />
 
-  <text id="location" fill="white" x="50%" y="100" width="300" font-size="20" font-family="System-Regular" text-anchor="middle" text-length="20" text-buffer="Loading" />
+  <textarea id="text" fill="white" x="18" y="70" width="300" height="45%" font-size="20" font-family="System-Regular" text-anchor="middle" text-length="200" text-buffer="Loading" />
 
-  <use href="#button" fill="#FFB400" x="0%" y="78%" width="50%" height="22%" font-size="31" font-family="System-Regular">
-    <set href="text" attributeName="text-buffer" to="I KNOW" />
+  <textarea fill="white" x="10%" y="225" width="260" font-size="20" font-family="System-Regular" text-anchor="middle" text-length="40" text-buffer="WAS I ALREADY AWARE OF THIS FACT?"/>
+
+
+
+  <use href="#button" fill="#FFB400" x="0%" y="78%" width="80" height="80" font-size="31" font-family="System-Regular">
     <set href="handle" attributeName="id" to="back-button" />
+    <image x="20%" y="60%" width="50" height="50" href="../images/thumbs-02.png" fill="white" />
   </use>
 
-  <use href="#button" fill="#F6511D" x="50%" y="78%" width="50%" height="22%" font-size="23" font-family="System-Regular">
-    <set href="text" attributeName="text-buffer" to="I DIDN'T KNOW" />
+  <use href="#button" fill="#F6511D" x="50%" y="78%" width="80" height="80" font-size="23" font-family="System-Regular">
     <set href="handle" attributeName="id" to="back-button2" />
+    <image x="20%" y="60%" width="50" height="50" href="../images/thumbs-1.png" fill="white" />
   </use>
 </svg>
