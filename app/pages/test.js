@@ -32,6 +32,12 @@ export function init() {
     destroy();
     document.history.back();
   };
+  $button = document.getElementById('back-button2');
+
+  $button.onclick = () => {
+    destroy();
+    document.history.back();
+  };
 
   getLocationName();
   setStateCallback('text', draw);
