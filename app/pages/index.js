@@ -4,6 +4,7 @@ import { switchPage } from '../navigation';
 //let $buttonDetail = null;
 //let $buttonReplace = null;
 let $buttonTest = null;
+let $buttonVerhouding = null;
 
 function doSomething() {
   console.log('hallo index');
@@ -14,6 +15,7 @@ export function destroy() {
   //$buttonDetail = null;
   //$buttonReplace = null;
   $buttonTest = null;
+  $buttonVerhouding = null;
 }
 
 export function init() {
@@ -21,6 +23,8 @@ export function init() {
   //$buttonDetail = document.getElementById('detail-button');
   //$buttonReplace = document.getElementById('replace-button');
   $buttonTest = document.getElementById('test-button');
+  $buttonVerhouding = document.getElementById('verhouding-button');
+
 
   /*$buttonDetail.onclick = () => {
     switchPage('detail', true);
@@ -31,6 +35,9 @@ export function init() {
   */
   $buttonTest.onclick = () => {
     switchPage('test', true);
+  };
+  $buttonVerhouding.onclick = () => {
+    switchPage('verhouding', true);
   };
 
   doSomething();

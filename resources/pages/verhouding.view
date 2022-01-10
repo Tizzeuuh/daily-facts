@@ -1,0 +1,8 @@
+<svg viewport-fill="#2D3142">
+
+<use href="#button" fill="#FFB400" font-size="35" x="10%" y="100%-250" width="80%">
+  <set href="text" attributeName="text-buffer" to="Back" />
+  <set href="handle" attributeName="id" to="back-button" />
+</use>
+
+</svg>
