@@ -1,7 +1,11 @@
 <svg viewport-fill="#2D3142">
 
+<use>
+  <set href="counter-display" attributeName="text-buffer" />
+</use>
+
 <use href="#button" fill="#FFB400" font-size="35" x="10%" y="100%-250" width="80%">
-  <set href="text" attributeName="text-buffer" to="Back" />
+  <set href="text" attributeName="text-buffer" to="back" />
   <set href="handle" attributeName="id" to="back-button" />
 </use>
 

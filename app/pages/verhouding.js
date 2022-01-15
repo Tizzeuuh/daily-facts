@@ -17,21 +17,21 @@ function draw() {
 }
 
 export function destroy() {
-  console.log('destroy verhouding page');
+  console.log('destroy test page');
   text = null;
   $button = null;
   removeStateCallback('text');
 }
 
 export function init() {
-  console.log('init verhouding page');
-  text = document.getElementById('text');
+  console.log('init test page');
   $button = document.getElementById('back-button');
 
   $button.onclick = () => {
     destroy();
     document.history.back();
   };
+
 
   getLocationName();
   setStateCallback('text', draw);
