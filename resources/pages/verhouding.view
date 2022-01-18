@@ -1,6 +1,6 @@
 <svg viewport-fill="#2D3142">
 
-<textarea fill="#FFB400" x="18" y="10" width="300" height="110" font-size="36" font-family="System-Regular" text-anchor="middle" text-buffer="your score" />
+<textarea fill="#FFB400" x="18" y="10" width="300" height="110" font-size="36" font-family="System-Regular" text-anchor="middle" text-buffer="_Your score" />
 
 <textarea id="counter-display" fill="white" x="18" y="70" width="300" height="75%" font-size="150" font-family="System-Regular" text-anchor="middle" text-length="300" text-buffer="17" />
 

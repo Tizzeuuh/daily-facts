@@ -18,3 +18,6 @@ msgstr "Punktestand"
 
 msgid "Back"
 msgstr "Retour"
+
+msgid "Your score"
+msgstr "Ihr Punktestand"
