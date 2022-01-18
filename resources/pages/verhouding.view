@@ -1,11 +1,9 @@
 <svg viewport-fill="#2D3142">
 
-<use>
-  <set href="counter-display" attributeName="text-buffer" />
-</use>
+<textarea id="counter-display" fill="white" x="18" y="70" width="300" height="45%" font-size="20" font-family="System-Regular" text-anchor="middle" text-length="200" text-buffer="(..)" />
 
 <use href="#button" fill="#FFB400" font-size="35" x="10%" y="100%-250" width="80%">
-  <set href="text" attributeName="text-buffer" to="back" />
+  <set href="text" attributeName="text-buffer" to="_Back" />
   <set href="handle" attributeName="id" to="back-button" />
 </use>
 

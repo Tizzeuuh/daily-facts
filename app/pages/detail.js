@@ -1,4 +1,3 @@
-
 import document from 'document';
 import { getLocationName } from '../commands';
 import { getStateItem, setStateCallback, removeStateCallback } from '../state';

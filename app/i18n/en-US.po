@@ -1,0 +1,20 @@
+msgid "Welcome"
+msgstr "Welcome!"
+
+msgid "Random-fact"
+msgstr "Random fact"
+
+msgid "Daily Fact"
+msgstr "Daily Fact"
+
+msgid "Loading"
+msgstr "Loading"
+
+msgid "WAS I ALREADY AWARE OF THIS FACT?"
+msgstr "WAS I ALREADY AWARE OF THIS FACT?"
+
+msgid "score"
+msgstr "Score"
+
+msgid "Back"
+msgstr "Back"

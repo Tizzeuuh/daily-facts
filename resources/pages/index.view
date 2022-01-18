@@ -1,13 +1,15 @@
+
+
 <svg viewport-fill="#2D3142">
-<textarea fill="#FFFFFF" x="18" y="3" width="300" height="105" font-size="45" font-family="Raiju-Bold" text-anchor="middle" text-buffer="Welcome!" />
+<textarea fill="#FFFFFF" x="18" y="3" width="300" height="105" font-size="45" font-family="Raiju-Bold" text-anchor="middle" text-buffer="_Welcome" />
 
   <use href="#button" fill="#FFB400" font-size="35" x="10%" y="100%-250" width="80%">
-    <set href="text" attributeName="text-buffer" to="Random-fact" />
+    <set href="text" attributeName="text-buffer" to="_Random-fact" />
     <set href="handle" attributeName="id" to="test-button" />
   </use>
 
   <use href="#button" fill="#FFB400" font-size="35" x="10%" y="100%-160" width="80%">
-    <set href="text" attributeName="text-buffer" to="score" />
+    <set href="text" attributeName="text-buffer" to="_score" />
     <set href="handle" attributeName="id" to="verhouding-button" />
   </use>
 
