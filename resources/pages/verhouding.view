@@ -1,8 +1,10 @@
 <svg viewport-fill="#2D3142">
 
-<textarea id="counter-display" fill="white" x="18" y="70" width="300" height="45%" font-size="20" font-family="System-Regular" text-anchor="middle" text-length="200" text-buffer="(..)" />
+<textarea fill="#FFB400" x="18" y="10" width="300" height="110" font-size="36" font-family="System-Regular" text-anchor="middle" text-buffer="your score" />
 
-<use href="#button" fill="#FFB400" font-size="35" x="10%" y="100%-250" width="80%">
+<textarea id="counter-display" fill="white" x="18" y="70" width="300" height="75%" font-size="150" font-family="System-Regular" text-anchor="middle" text-length="300" text-buffer="17" />
+
+<use href="#button" fill="#F6511D" x="0%" y="82%" width="100%" height="70" font-size="35">
   <set href="text" attributeName="text-buffer" to="_Back" />
   <set href="handle" attributeName="id" to="back-button" />
 </use>
