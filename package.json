@@ -36,5 +36,8 @@
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "fitbit-easy-clock": "^0.1.0"
   }
 }

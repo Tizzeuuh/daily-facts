@@ -31,12 +31,63 @@ export function init() {
   $button.onclick = () => {
     destroy();
     document.history.back();
+    document.getElementById("deep").style.display = "inline";
+    document.getElementById("countdown").style.display = "inline";
+    const myInterval = setInterval(myTimer, 60000);
+
+    var countdownNumberEl = document.getElementById('countdown');
+    var countdown = 1200;
+
+    countdownNumberEl.textContent = countdown;
+
+    function myTimer() {
+
+      countdown = --countdown <= 0 ? 1200 : countdown;
+      countdownNumberEl.textContent = countdown;
+
+  };
+
+  function myStopFunction() {
+    if(countdown <= 0){
+    document.getElementById("countdown").style.display = "none";
+    }
+  };
+
+  if (countdown <= 0) {
+    myStopFunction();
+  }
+
   };
   $button = document.getElementById('back-button2');
 
   $button.onclick = () => {
     destroy();
     document.history.back();
+    document.getElementById("deep").style.display = "inline";
+    document.getElementById("countdown").style.display = "inline";
+    const myInterval = setInterval(myTimer, 60000);
+
+    var countdownNumberEl = document.getElementById('countdown');
+    var countdown = 1200;
+
+    countdownNumberEl.textContent = countdown;
+
+    function myTimer() {
+
+      countdown = --countdown <= 0 ? 1200 : countdown;
+      countdownNumberEl.textContent = countdown;
+
+  };
+
+  function myStopFunction() {
+    if(countdown <= 0){
+    document.getElementById("countdown").style.display = "none";
+    }
+  };
+
+  if (countdown <= 0) {
+    myStopFunction();
+  }
   };
 
   getLocationName();

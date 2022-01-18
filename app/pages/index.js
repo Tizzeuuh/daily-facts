@@ -1,6 +1,7 @@
 import document from 'document';
 import { switchPage } from '../navigation';
 
+
 //let $buttonDetail = null;
 //let $buttonReplace = null;
 let $buttonTest = null;
@@ -41,4 +42,14 @@ export function init() {
   };
 
   doSomething();
+
+  document.getElementById("deep").style.display = "none";
+
+  document.getElementById("countdown").style.display = "none";
+
+
+
+
+
+
 }

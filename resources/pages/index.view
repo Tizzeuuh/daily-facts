@@ -11,4 +11,14 @@
     <set href="handle" attributeName="id" to="verhouding-button" />
   </use>
 
+
+    <rect id= "deep" x="0%" y="0%" width="100%" height="100%" fill="#2D3142" />
+
+  <text id="countdown" x="50%" y="50%+15"
+      fill="#FFB400" font-size="90" font-family="System-Regular"
+      text-anchor="middle" text-length="20" text-buffer="10:00" letter-spacing="20" />
+
+
+
+
 </svg>
