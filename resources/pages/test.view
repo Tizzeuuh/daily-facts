@@ -16,4 +16,5 @@
   <use href="#button" opacity='0' x="50%" y="82%" width="50%" height="70" font-size="23" font-family="System-Regular" >
     <set href="handle" attributeName="id" to="back-button2" />
   </use>
+
 </svg>
