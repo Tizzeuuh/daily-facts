@@ -1,0 +1,23 @@
+msgid "Welcome"
+msgstr "Willkommen!"
+
+msgid "Random-fact"
+msgstr "Zufallsfakten"
+
+msgid "Daily Fact"
+msgstr "Täglicher Fakt"
+
+msgid "Loading"
+msgstr "Laden"
+
+msgid "WAS I ALREADY AWARE OF THIS FACT?"
+msgstr "WUSSTEN SIE DIESE TATSACHE?"
+
+msgid "score"
+msgstr "Punktestand"
+
+msgid "Back"
+msgstr "Retour"
+
+msgid "Your score"
+msgstr "Ihr Punktestand"

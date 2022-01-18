@@ -1,0 +1,23 @@
+msgid "Welcome"
+msgstr "Welkom!"
+
+msgid "Random-fact"
+msgstr "Willekeurige feit"
+
+msgid "Daily Fact"
+msgstr "Dagelijkse feit"
+
+msgid "Loading"
+msgstr "Laden"
+
+msgid "WAS I ALREADY AWARE OF THIS FACT?"
+msgstr "WAS JE AL OP DE HOOGTE VAN DEZE FEIT ?"
+
+msgid "score"
+msgstr "Score"
+
+msgid "Back"
+msgstr "Terug"
+
+msgid "Your score"
+msgstr "Uw score "
